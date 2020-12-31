@@ -22,6 +22,8 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
+			state.actions.loadContact();
+
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only run once on the entire application lifetime
