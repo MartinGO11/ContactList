@@ -1,10 +1,12 @@
-const getState = ({ getStore, setStore }) => {
+const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			contacts: []
 			//Your data structures, A.K.A Entities
 		},
 		actions: {
+			createContact: () => {},
+
 			loadContact: () => {
 				fetch("https://assets.breatheco.de/apis/fake/contact/agenda/martin_super_agenda")
 					.then(response => response.json())
