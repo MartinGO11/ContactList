@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const AddContact = () => {
+	const { store, actions } = useContext(Context);
+	let inputName = "";
+	let inputEmail = "";
+	let inputAddress = "";
+	let inputPhone = "";
+
 	return (
 		<div className="container">
 			<div>

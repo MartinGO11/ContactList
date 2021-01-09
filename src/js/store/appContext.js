@@ -22,7 +22,7 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
-			state.actions.loadContact();
+			state.actions.loadAgenda();
 
 			/**
 			 * EDIT THIS!
